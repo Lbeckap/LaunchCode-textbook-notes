@@ -50,7 +50,7 @@
 
 
 // Future-Proof Your Code with Automated Tests 
-        //Be through NOW
+        //Be thorough NOW
         //It will save a ton of time and inconsistencies later
         //tests are a form of documentation
 
@@ -67,7 +67,7 @@
         // a single describe block should pertain to one specific function, data structure, class etc. (3 functions = 3 describe blocks)
 
 //* test - a test block is the specification, nested inside the describe block. Also a higher-order function that takes a string and an anonymous function
-        //The string should be spcific and a continuation to the string in the describe block ex: The addTwoNums function "returns the sum of 2 numbers".
+        //The string should be specific and a continuation to the string in the describe block ex: The addTwoNums function "returns the sum of 2 numbers".
         /*
             describe("The addTwoNums function", function() {
                test("returns the sums of 2 numbers", function () {
