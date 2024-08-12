@@ -77,7 +77,70 @@
 
     //* fulfilled - data is passed to the response handler function. The then method of Promise defines what will happen when the promise is fulfilled.
 
-    //* rejected - the error reason is returned.        
+    //* rejected - the error reason is returned.    
+    
+    
+
+    
+
+/*_________Code w/ Carrie___________*/
+
+// APIs have API Documentation - the quality of the information can vary wildly
+    // Documentation may contain
+        // All possible endpoints
+        // Any headers required
+        // Available query parameters
+        // formats available (text, XML, JSON, etc.)
+
+//* promise - is the expactation of a response. Fetching data has two promises.
+    // 1. the response from the initial request
+    // 2. the data itself, nicely packaged as JSON
+
+// Two different syntax 
+    // 1. traditional - uses Promise class .then() . And it must be used twice because there are two promises
+    // 2. Modern - uses keywords 'async' and 'await'
+
+/* Traditional - 
+
+    fetch('www.company.com/products').then(function(response) {
+        response.json().then(function(data) {
+            do stuff with data goes here
+        });
+    });
+
+    .then() - controls the timing
+    .json() - extracts the data
+    (data) - capture the data and do something with it in the function
+
+*/
+
+/* Modern -
+
+    async function fetchProductionData() {
+        let response = await fetch('www.company.com/products');
+        let data = await response.json();
+
+        do stuff with data goes here
+    }
+
+
+    1. declare an asyncronous fucntion with the async keyword
+    2. use await to handle both promises
+    3. remember to call the funtion
+        fetchProductionData();
+
+*/
+
+// How to use a header in fetch
+    // The API documentation will identify what header is needed
+    // add the header AFTER the endpoint using {}
+
+    // example
+    let response = await fetch('www.company.com/products', {
+        header: {
+            "x-api-key": "Live_i3r989 cinrc84yt8nyt"
+        }
+    });
 
 
 

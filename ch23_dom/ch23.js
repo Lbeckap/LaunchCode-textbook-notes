@@ -62,3 +62,24 @@
     // }
 
     // window.addEventListener("load", init);
+
+
+
+/*___________Code w/ Carrie_________ */
+
+// Event Delegation
+
+    // add a single event listener to the document and then use even.target.id to specify what happends if an element with a certain id is clicked
+
+// example
+
+    window.addEventListener('load', function () {
+        document.addEventListener('click', function() {
+            if (event.target.id === 'dog-button') {
+                //do something if dog-button is clicked
+            }
+            if (event.target.id === 'cat-button') {
+                //do something if cat-button is clicked
+            }
+        });   
+    });

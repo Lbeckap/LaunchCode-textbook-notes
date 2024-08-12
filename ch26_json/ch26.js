@@ -45,3 +45,5 @@ JSON.parse() // converts JSON strings into JavaScript objects, deserialization
 JSON.stringify() //converts JavaScript objects into a JSON string, serialization 
 
 //* JSON makes it possible to store JavaScript objects as text
+
+
