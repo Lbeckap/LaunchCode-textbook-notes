@@ -64,3 +64,6 @@
 //-------------- Excercises: Debugging
 
 //-------------- Next Steps: Read additional two sources and jot down anything noteworthy
+
+console.log(Number('five')); // prints NaN because the compiler is looking at the binary in order to convert it.
+console.log(Number('5'));
