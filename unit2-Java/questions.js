@@ -69,6 +69,7 @@
         */
 
 //? Should I always just use ArrayList? 
+    // No, circumstances differ. I should think carefully about the type that is needed.
 
 //? When should I use Array?
     // Array is good for an ordered list that can be referenced usin indices.
@@ -88,9 +89,27 @@
     // Vector
 
 //? What is a set? Does it really not allow duplicates?
+    // Duplicates are not allowed.
+    // is NOT an ordered collection.
+    // It supports generics and they should be used. (This will avoid class cast exeception at runtime)'
+    // Some implementations are HashSet and Linked HashSet
 
 //? What is .nextInt(), .next() the difference and how to use them.
 
 //? What is the colon used for in Java
 
 //* Good example of the scanner can be found at java-web-dev-projects/control-flow-and-collections/chapter-example/arrayList
+    //? When not to close the scanner?
+        // The Scanner(System.in) relies on the static InputStream in of the System class. Closing the Scanner also closes the Inputstream. Since in is static, it belongs to all Scanner(System.in) instances and closing one would close all, which, in turn, makes the program unresponsive to any and all keyboard input.
+        // a better practice is to use try-with-resource 
+
+//? What is hashing?
+
+//? What is bigO notation?
+
+//? How exactly do getters and setters in Java work?
+
+//? What is the heap?
+    // Used for dynamic allocation of Java objects and JRE(?) classes at runtime
+
+//? How to make an ArrayList from a class? The type 
