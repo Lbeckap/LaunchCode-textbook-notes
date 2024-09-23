@@ -19,5 +19,19 @@ public class Main {
         Integer creditsScience = (science.getCredits());
         System.out.println(creditsMath.equals(creditsScience)); // true
 
+        System.out.println(FizzBuzz("fig"));
+    }
+
+    public static String FizzBuzz(String str) {
+        if (str.toLowerCase().startsWith("f")) {
+            if (str.toLowerCase().endsWith("b")) {
+                return "FizzBuzz";
+            }
+            return "Fizz";
+        } else if (str.toLowerCase().endsWith("b")){
+            return "Buzz";
+        } else {
+           return str;
+        }
     }
 }
